@@ -1,0 +1,376 @@
+h1 {
+  margin: 0;
+  color: #ffffff;
+}
+
+h3 {
+  margin: 10px;
+  color: #ffffff;
+  font-family: "Jost", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-size: cover;
+  z-index: -1;
+}
+
+body {
+  background-size: cover;
+  background-image: url("../public/Background.jpg");
+}
+
+.Contenedor-Principal {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-align: center;
+  width: 50%;
+  margin: 50px auto auto auto;
+}
+
+.Contenedor-Banner {
+  background-color: rgba(0, 255, 255, 0);
+}
+
+.Contenedor-Secundario {
+  display: flex;
+  margin: 20px;
+}
+
+.Contenedor-Review {
+  width: 60%;
+  margin-right: 10px;
+}
+
+.Contenedor-Review textarea {
+  width:90%;
+  height: 89%;
+  border-radius: 20px;
+  font-family: "Roboto";
+  padding: 15px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-family: "Jost", sans-serif;
+}
+
+.Contenedor-Review textarea::placeholder {
+  color: #ffffffd4;
+}
+
+
+.Contenedor-Resultado {
+  width: 40%;
+  margin-left: 10px;
+}
+
+.Contenedor-Resultado h1 {
+  font-size: 180px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 95%;
+  height: 90%;
+  border-radius: 20px;
+  margin: auto;
+  padding-top: 25px;
+  border-color: black;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.Contenedor-Principal button{
+  margin-top: 10%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #00000000;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  font-family: "Jost", sans-serif;
+}
+
+.Contenedor-Principal button:hover {
+  background-color: #00000070;
+}
+
+.Contenedor-Principal button:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.PagPrincipal{}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 25px;
+}
+
+/* Estilos para los botones */
+nav button {
+  border-radius: 10px;
+  width: 12%;
+  background-color: #6c80ff7c;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+}
+
+/* Estilos para los botones al pasar el mouse */
+nav button:hover {
+  background-color: #6c80ff;
+}
+
+/* Estilos específicos para los botones en la barra de navegación */
+nav button {
+  margin: 0 4.5px;
+}
+
+.Contenedor-Banner h3{
+  font-size: 30px;
+}
+
+.PagPrincipalInformación{
+  height: 550px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  border-radius: 40px;
+  border: 2px solid #ffffff;
+  margin-top: 30px;
+}
+
+.PagPrincipalInformación h1 {
+  text-align: center;
+  padding-top: 3.5%;
+  font-family: "Jost", sans-serif;
+  color: rgb(125, 138, 255);
+}
+
+.PagPrincipalInformación p {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Jost", sans-serif;
+  font-size: 17px;
+  color: white;
+}
+
+.PagPrincipalInformación img {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 35%;
+  height: 40%;
+}
+
+.Contenedor-Resultado img{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 95%;
+  height: 90%;
+  border-radius: 20px;
+  margin: auto;
+  border-color: black;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.texto_predicciones {
+  text-align: center;
+  font-family: "Jost", sans-serif;
+}
+
+.texto_predicciones h2 {
+  color: white;
+  font-size: 30px;
+}
+
+.texto_predicciones input[type="file"] {
+  margin-bottom: 15px;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+}
+
+.texto_predicciones input::file-selector-button {
+  margin-left: 20px;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #00000000;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  font-family: "Jost", sans-serif;
+}
+
+.texto_predicciones input::file-selector-button:hover {
+  background-color: #00000070;
+}
+
+.texto_predicciones input::file-selector-button:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.texto_predicciones button {
+  margin-left: 20px;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #00000000;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  font-family: "Jost", sans-serif;
+}
+
+.texto_predicciones button:hover {
+  background-color: #00000070;
+}
+
+.texto_predicciones button:focus {
+  outline: none;
+  background-color: #00000070;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.texto_predicciones h2:last-child {
+  /* Estilo para el estado de carga */
+  margin-top: 15px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+
+
+
+.reviews_title h3 {
+  text-align: center;
+}
+
+.review-list {
+  list-style-type: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+}
+
+.review-item2 {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+}
+
+.review-item {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  /* padding: 10px 25px; */
+  border-bottom: 1px solid #ccc;
+}
+
+.review-text {
+  border-right: 2px solid #ffffff;
+}
+
+.review-prediction {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-text, .review-prediction {
+  padding: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  color: white;
+  font-family: "Jost", sans-serif;
+}
+
+.pagination {
+  /* Estilo para la sección de paginación */
+  text-align: center;
+  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+/* Estilo para los botones de paginación */
+.pagination button {
+  /* Estilos generales de los botones de paginación */
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #6c80ff7c;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+}
+
+.pagination button:hover {
+  /* Estilo para los botones de paginación al pasar el cursor */
+  background-color: #6c80ff;
+}
+
+.pagination button.active {
+  /* Estilo para el botón activo (página actual) */
+  background-color: #0015d16a;
+  color: white;
+  font-weight: bold;
+}
+
+.review-prediction img{
+  width: 100%;
+}
